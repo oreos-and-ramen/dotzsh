@@ -19,7 +19,6 @@ repl() {
     done
 }
 
-alias python=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
-alias python3=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+[ -f ~/.zsh/aliases ] && source ~/.zsh/aliases
 
 eval "$(starship init zsh)"
