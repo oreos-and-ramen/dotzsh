@@ -1,0 +1,25 @@
+
+[[ -n "$_TUTR" ]] && source $_TUTR || true  # shell tutorial shim DO NOT MODIFY
+
+repl() {
+    if (( $# == 0 )); then
+        1>&2 echo "Load a Python script into the REPL"
+        1>&2 echo "Run exit() to restart the REPL, exit(1) to quit to the shell"
+        1>&2 echo "    Usage: repl SCRIPT.py"
+        return 1
+    elif [[ ! -e $1 ]]; then
+        1>&2 echo "File '$1' does not exist"
+        1>&2 echo "    Usage: repl SCRIPT.py"
+        return 1
+    fi
+
+    while python3 -i $1; do
+        echo "run exit() to restart, exit(1) to quit"
+        sleep .4
+    done
+}
+
+alias python=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+alias python3=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+
+eval "$(starship init zsh)"
