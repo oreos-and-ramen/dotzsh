@@ -1,3 +1,4 @@
+# If you are making changes to this file, make sure to subsequently run 'reload'!
 
 [[ -n "$_TUTR" ]] && source $_TUTR || true  # shell tutorial shim DO NOT MODIFY
 
@@ -19,6 +20,7 @@ repl() {
     done
 }
 
+eval "$(starship init zsh)"
+
 [ -f ~/.zsh/aliases ] && source ~/.zsh/aliases
 
-eval "$(starship init zsh)"
