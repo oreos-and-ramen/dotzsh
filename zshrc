@@ -23,4 +23,4 @@ repl() {
 eval "$(starship init zsh)"
 
 [ -f ~/.zsh/aliases ] && source ~/.zsh/aliases
-
+autoload -Uz compinit && compinit
