@@ -6,7 +6,7 @@ Simple default settings for your `Zsh` configuration!
 
 ## Setup and Start
 
-Once you clone the git repo, make sure to sun the `setup.sh` script to setup the default configurations. **This will modify your `~/.zshrc` file!**
+Once you clone the git repo, make sure to run the `setup.sh` script to setup the default configurations. **This will modify your `~/.zshrc` file!**
 Be sure to save any other settings you may want to keep beforehand if you use this!
 
 ## Maintenance
