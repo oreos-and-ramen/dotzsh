@@ -20,7 +20,11 @@ repl() {
     done
 }
 
+# runs starship
 eval "$(starship init zsh)"
 
+# applies all aliases from alias file
 [ -f ~/.zsh/aliases ] && source ~/.zsh/aliases
+
+# better autocomplete
 autoload -Uz compinit && compinit
