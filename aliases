@@ -7,4 +7,4 @@ alias reload="source ~/.zshrc && echo 'Updated .zshrc'"
 alias 
 
 # Presets =>
-alias ls='ls -G'
+alias 
