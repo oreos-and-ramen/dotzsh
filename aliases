@@ -4,8 +4,7 @@ alias reload="source ~/.zshrc && echo 'Updated .zshrc'"
 # Fundamental alias DO NOT DELETE ^^^
 
 # Personal aliases =>
-alias python=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
-alias python3=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3
+alias 
 
 # Presets =>
 alias ls='ls -G'
