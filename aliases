@@ -8,4 +8,3 @@ alias reload="source ~/.zshrc && echo 'Updated .zshrc'"
 
 # Presets =>
 alias ..="cd .."
-alias --="clear"
