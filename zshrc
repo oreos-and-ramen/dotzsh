@@ -28,3 +28,4 @@ eval "$(starship init zsh)"
 
 # better autocomplete
 autoload -Uz compinit && compinit
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*'
